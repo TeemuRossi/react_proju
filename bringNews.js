@@ -1,12 +1,14 @@
 import React from 'react';
 
 
-const Thenews = () => {
+const Thenews = ({title,image,author,description}) => {
     return(
       <div>
-        <h1>Uutinen</h1>
-        <h2>kirjoittaja</h2>
-        <p>Sisalto</p>
+        <h1>{title}</h1>
+        <img src={image} alt="OOPPS"/>
+        <h2>{author}</h2>
+        <p>{description}</p>
+
       </div>
         
   
