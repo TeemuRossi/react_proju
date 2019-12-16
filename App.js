@@ -12,8 +12,8 @@ export const App = () => {
   // inside useEffect we have the actual const to fetch the news from the api, which in, the query and endpoint are placed.
   useEffect(()=> {
     const getNews = async () => {
-      //fetch
-      const response = await fetch(`https://newsapi.org/v2/${endpoint}?q=${query}&apiKey=36dd4792425040a1b74b821ffc3cb4d2`);
+      //fetch, put your api key here
+      const response = await fetch(`https://newsapi.org/v2/${endpoint}?q=${query}&apiKey=`);
       const data = await response.json();
       //setting "news" to be the data we got
       setNews(data.articles);
